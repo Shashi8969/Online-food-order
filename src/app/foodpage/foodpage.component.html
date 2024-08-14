@@ -16,4 +16,16 @@
     <div class="tag">
         <app-tags [foodPagetags]="food.tags"></app-tags>
     </div>
+    <div class="cook-time">
+        <span>
+            Time to cook about ⏱️<strong>
+                {{food.cookTime}}
+            </strong> min.</span>
+    </div>
+    <div class="price">
+        <span>
+            {{food.price|currency}}
+        </span>
+    </div>
+    <button>Add to Cart</button>
 </div>
