@@ -16,6 +16,7 @@ ul li a{
     flex-direction: column;
     overflow: hidden;
     color: #e72920;
+    text-decoration: none;
 }
 li a:hover{
     opacity: 0.9;

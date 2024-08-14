@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FoodService } from '../services/food.service';
+import { FoodService } from '../services/food/food.service';
 import { CommonModule } from '@angular/common';
 import { food } from '../shared/models/food';
 import { ActivatedRoute } from '@angular/router';
