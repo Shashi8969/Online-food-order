@@ -18,7 +18,7 @@ export class HomeComponent implements OnInit{
         if(params['searchItem'])
           this.foods = this.fs.getAll().filter(food => food.name.toLowerCase().includes(params['searchItem'].toLowerCase()));
         else
-        this.foods=this.fs.getAll(); //Done
+          this.foods=this.fs.getAll(); //Done
     })
     
   }
