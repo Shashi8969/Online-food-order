@@ -7,6 +7,16 @@ import { food } from '../shared/models/food';
 export class FoodService {
 
   constructor() { }
+  getAllFoodByTag(tag:string):food[]{
+   /* if(tag== 'all')
+      return this.getAll()
+    else
+    return this.getAll().filter(food => food.tags?.includes(tag));*/
+
+  //Write this statement is very simple type lets do it.
+  return tag =="All" ?
+    this.getAll():this.getAll().filter(food => food.tags?.includes(tag));
+  }
   getAll():food[]{
     return[
       {
@@ -84,7 +94,7 @@ export class FoodService {
         origins: ['italy'],
         star: 4.5,
         imageUrl: 'assets/food-6.jpg',
-        tags: ['FastFood','Pizza','Lunch'],
+        tags: ['Pizza','Lunch'],
       },
       
     ]
