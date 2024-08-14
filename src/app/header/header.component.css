@@ -18,6 +18,7 @@ a:hover{
 a.logo{
     font-weight: bold;
     padding: 1em;
+    font-size: 17px;
 }
 nav ul{
     list-style-type: none;
@@ -26,4 +27,5 @@ nav ul{
 nav ul li a{
     padding: 1em;
     display: inline-block;
+    font-size: 17px;
 }
