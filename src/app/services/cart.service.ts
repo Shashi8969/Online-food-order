@@ -6,24 +6,24 @@ import { CartItem } from '../shared/models/CartItem';
   providedIn: 'root'
 })
 export class CartService {
-  private cart:Cart = new Cart()
-  addToCart(food:food):void{
+  private cart: Cart = new Cart()
+  addToCart(food: food): void {
     let cartItem = this.cart.items.find(item => item.food.id === food.id)
-    if(cartItem){
+    if (cartItem) {
       this.changeQuantity(food.id, cartItem.quantity + 1)
       return;
+    }
+    this.cart.items.push(new CartItem(food));
   }
-  this.cart.items.push(new CartItem(food));
-}
   changeQuantity(foodId: number, quantity: number) {
-    let cartItem = this.cart.items.find(item => item.food.id ===foodId);
-    if(!cartItem) return;
+    let cartItem = this.cart.items.find(item => item.food.id === foodId);
+    if (!cartItem) return;
     cartItem.quantity = quantity;
   }
-removeFromCart(foodId:number):void{
-  this.cart.items = this.cart.items.filter(item => item.food.id != foodId);
-}
-getCart():Cart{
-  return this.cart;
-}
+  removeFromCart(foodId: number): void {
+    this.cart.items = this.cart.items.filter(item => item.food.id != foodId);
+  }
+  getCart(): Cart {
+    return this.cart;
+  }
 }
