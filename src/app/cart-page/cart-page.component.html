@@ -23,3 +23,11 @@
         </div>
     </li>
 </ul>
+<div class="checkout">
+    <div class="food-count">
+        {{cart.items.length}}
+    </div>
+    <div class="total-price">
+        {{cart.totalPrice|currency}}
+    </div>
+</div>
