@@ -12,11 +12,7 @@ import { food } from '../shared/models/food';
 })
 export class CartPageComponent implements OnInit{
   cart!: Cart;
-  constructor(private cartService: CartService, private foodService:FoodService){  
-    let foods = foodService.getAll();
-    cartService.addToCart(foods[1]);
-    cartService.addToCart(foods[3]);
-    cartService.addToCart(foods[5]);
+  constructor(private cartService: CartService){  
     this.setCart();
   }
 
