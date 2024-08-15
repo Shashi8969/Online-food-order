@@ -25,3 +25,22 @@ ul li{
 ul li:last-child{
     border:none;
 }
+ul li img{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 100rem;
+    object-fit:cover;
+}
+ul li div{
+    padding: 1rem;
+}
+ul li div:not(:first-child){
+    flex-basis: 18%;
+}
+ul li select{
+    width: 4rem;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid lightcoral;
+    font-weight: 100;
+}
