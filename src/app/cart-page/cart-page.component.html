@@ -1,4 +1,5 @@
-<div class="container">
+<app-not-fond [visible]="!cart || cart.items.length <=0" notFoundMessage="Item not found!" resetLinkText="Go to Homepage!"></app-not-fond>
+<div *ngIf="cart && cart.items.length >0" class="container">
         <ul>
             <li *ngFor="let cartItem of cart.items">
                 <div>
