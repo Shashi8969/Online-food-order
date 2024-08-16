@@ -1,7 +1,7 @@
 <app-search></app-search>
 <app-tags></app-tags>
 <app-not-fond [visible]="!foods || foods.length <=0" notFoundMessage="Currently Unavailable!" resetLinkText="Continue Shoping"></app-not-fond>
-<ul>
+    <ul>
         <li *ngFor="let food of foods">
             <a routerLink="/food/{{food.id}}">
                 <img id="food_img" src="{{food.imageUrl}}" alt="food">
@@ -26,4 +26,4 @@
                 </div>
             </a>
         </li>
-</ul>
+    </ul>    
