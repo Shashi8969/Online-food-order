@@ -1,5 +1,6 @@
 <app-search></app-search>
 <app-tags></app-tags>
+<app-not-fond [visible]="!foods || foods.length <=0" notFoundMessage="Currently Unavailable!" resetLinkText="Continue Shoping"></app-not-fond>
 <ul>
         <li *ngFor="let food of foods">
             <a routerLink="/food/{{food.id}}">
