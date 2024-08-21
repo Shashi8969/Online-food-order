@@ -26,7 +26,7 @@ export class FoodService {
 
   getAllTag():Tag[]{
     return [
-      {name:'All', count:11},
+      {name:'All', count: 7},
       {name:'FastFood', count: 4},
       {name:'Pizza', count: 2},
       {name:'Lunch', count: 3},
@@ -104,15 +104,37 @@ export class FoodService {
         tags: ['FastFood','Pizza','Lunch'],
       },
       {
-        id:6, 
-        name:'Noodels', 
-        cookTime: '10-15',
+        id:7, 
+        name:'Creamy Vegetable Soup', 
+        cookTime: '20-35',
         price: 10,
         favorite: false,
-        origins: ['italy'],
+        origins: ['India'],
         star: 4.5,
-        imageUrl: 'assets/food-6.jpg',
-        tags: ['Pizza','Lunch'],
+        imageUrl: 'assets/Soup-1.jpeg',
+        tags: ['Soup','Snacks'],
+      },
+      {
+        id:8, 
+        name:'Vegetable Soup', 
+        cookTime: '15-20',
+        price: 10,
+        favorite: false,
+        origins: ['India'],
+        star: 4.5,
+        imageUrl: 'assets/Soup-2.jpg',
+        tags: ['Soup','Snacks'],
+      },
+      {
+        id:9, 
+        name:'food', 
+        cookTime: '15-20',
+        price: 10,
+        favorite: true,
+        origins: ['India'],
+        star: 4.5,
+        imageUrl: 'assets/food-7.jpg',
+        tags: ['Soup','Snacks'],
       },
       
     ]

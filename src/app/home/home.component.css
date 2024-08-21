@@ -1,11 +1,12 @@
 ul{
     display: flex;
-    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
     list-style-type: none;
     padding: 0;
+    justify-content: center;
 }
+
 ul li a{
     height: 20rem;
     width: 20rem;
@@ -79,8 +80,10 @@ img {
 ul li{
     margin: .5rem;
     border: 1px solid #ddd; /* Gray border */
+
     border-radius: 4px;  /* Rounded border */
 }
+
 ul li:hover{
-    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+    box-shadow: 0 0 2px 1px #e72920;
 }
