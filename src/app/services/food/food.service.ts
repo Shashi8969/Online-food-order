@@ -46,7 +46,7 @@ export class FoodService {
         origins: ['India'],
         star: 4.5,
         imageUrl: 'assets/food-1.jpg',
-        tags: ['FastFood','Pizza','Lunch'],
+        tags: ['Salad'],
       },
       {
         id:2, 
@@ -79,7 +79,7 @@ export class FoodService {
         origins: ['italy'],
         star: 4.5,
         imageUrl: 'assets/food-4.jpg',
-        tags: ['FastFood','Pizza','Lunch'],
+        tags: ['FastFood'],
       },
       {
         id:5, 
@@ -90,7 +90,7 @@ export class FoodService {
         origins: ['italy'],
         star: 4.5,
         imageUrl: 'assets/food-5.jpg',
-        tags: ['FastFood','Pizza','Lunch'],
+        tags: ['FastFood','Lunch'],
       },
       {
         id:6, 
@@ -101,7 +101,7 @@ export class FoodService {
         origins: ['italy'],
         star: 4.5,
         imageUrl: 'assets/food-6.jpg',
-        tags: ['FastFood','Pizza','Lunch'],
+        tags: ['FastFood'],
       },
       {
         id:7, 
@@ -127,14 +127,25 @@ export class FoodService {
       },
       {
         id:9, 
-        name:'food', 
+        name:'Hamburger', 
         cookTime: '15-20',
         price: 10,
         favorite: true,
-        origins: ['India'],
+        origins: ['Germani','American'],
         star: 4.5,
-        imageUrl: 'assets/food-7.jpg',
-        tags: ['Soup','Snacks'],
+        imageUrl: 'assets/hamburger-cheese.webp',
+        tags: ['FastFood','Snacks'],
+      },
+      {
+        id:10, 
+        name:'Margherita Pizza', 
+        cookTime: '15-20',
+        price: 10,
+        favorite: true,
+        origins: ['Italian'],
+        star: 4.5,
+        imageUrl: 'assets/margherita-pizza.webp',
+        tags: ['FastFood','Pizza'],
       },
       
     ]
