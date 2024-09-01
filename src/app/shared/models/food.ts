@@ -3,7 +3,7 @@ export class food{
     price!:number;
     name!:string;
     favorite:boolean =false;
-    star:number = 0;
+    star:number = 1;
     tags?:string[];
     imageUrl!:string;
     cookTime!:string;

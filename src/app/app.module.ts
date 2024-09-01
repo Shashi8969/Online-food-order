@@ -10,6 +10,7 @@ import { TagsComponent } from './tags/tags.component';
 import { CartPageComponent } from './cart-page/cart-page.component';
 import { FoodpageComponent } from './foodpage/foodpage.component';
 import { NotFondComponent } from './not-fond/not-fond.component';
+import { StarRatingComponent } from './star-rating/star-rating.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { NotFondComponent } from './not-fond/not-fond.component';
     TagsComponent,
     CartPageComponent,
     FoodpageComponent,
-    NotFondComponent
+    NotFondComponent,
+    StarRatingComponent
   ],
   imports: [
     BrowserModule,

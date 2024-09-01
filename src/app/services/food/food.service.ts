@@ -44,7 +44,7 @@ export class FoodService {
         price: 10,
         favorite: true,
         origins: ['India'],
-        star: 4.5,
+        star: 4,
         imageUrl: 'assets/food-1.jpg',
         tags: ['Salad'],
       },
