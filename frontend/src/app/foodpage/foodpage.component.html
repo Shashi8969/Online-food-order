@@ -6,7 +6,8 @@
         <div class="details">
             <div class="header">
             <span class="name">
-                {{food.name}}
+                {{food.name}} 
+                <img src="assets/veg-icon.svg" class="veg_image">
             </span>
             <span class="favorite {{food.favorite?'':'not'}}">♥</span>
         </div>
@@ -34,4 +35,7 @@
         </div>
         <button (click)="addToCart()">Add to Cart</button>
 </div> 
+</div>
+<div>
+    <p>Description</p>
 </div>
